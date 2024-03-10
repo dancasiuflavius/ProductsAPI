@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Data\NewFolder\" />
     <Folder Include="Products\Exceptions\" />
     <Folder Include="Products\Service\" />
   </ItemGroup>

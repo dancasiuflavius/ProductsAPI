@@ -1,14 +1,16 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using ProductsCrudApi.Products.Dto;
 using ProductsCrudApi.Products.Model;
+using ProductsCrudApi.Products.Repository;
 using ProductsCrudApi.Products.Repository.Interfaces;
 
 namespace ProductsCrudApi.Products.Controller
 {
     [ApiController]
-    [Route("controller")]
+    [Route("products")]
 
-    public class ProductsController:ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly ILogger<ProductsController> _logger;
 
@@ -33,14 +35,33 @@ namespace ProductsCrudApi.Products.Controller
 
 
         [HttpGet("api/v1/getName/{name}")]
-        public async Task<ActionResult<Product>> GetName([FromRoute]string name)
+        public async Task<ActionResult<Product>> GetName([FromRoute] string name)
         {
             var product = await _productRepository.GetByNameAsync(name);
             return Ok(product);
         }
-        
-      
+        [HttpGet("api/v1/getAllByPrice")]
+        public async Task<ActionResult<Double>> GetAllAsyncPrice()
+        {
+            var productPrices = await _productRepository.GetAllAsyncPrice();
+            return Ok(productPrices);
+        }
 
+        [HttpPost("api/v1/create")]
+
+        public async Task<ActionResult<Product>> CreateProduct([FromBody]CreateProductRequest createProductRequest)
+        {
+            var product = await _productRepository.CreateAsync(createProductRequest);
+
+
+            return Ok(product);
+
+
+
+
+
+
+        }
     }
 }
 

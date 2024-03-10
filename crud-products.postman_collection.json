@@ -23,6 +23,22 @@
 				"url": "https://localhost:7119/controller/api/v1/getName/pepperoni pizza"
 			},
 			"response": []
+		},
+		{
+			"name": "GetAllProdByPrice",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PostCreateProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
