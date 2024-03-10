@@ -1,0 +1,15 @@
+﻿insert into products (id, price, name, category, date_of_fabrication) values (1, 35.04, 'cheeseburger', 'snacks', '2023-08-29');
+insert into products (id, price, name, category, date_of_fabrication) values (2, 13.04, 'caprese salad', 'appetizers', '2023-06-17');
+insert into products (id, price, name, category, date_of_fabrication) values (3, 46.47, 'greek salad', 'snacks', '2023-06-28');
+insert into products (id, price, name, category, date_of_fabrication) values (4, 24.52, 'veggie burger', 'snacks', '2023-11-16');
+insert into products (id, price, name, category, date_of_fabrication) values (5, 53.42, 'bbq chicken pizza', 'pasta', '2023-11-01');
+insert into products (id, price, name, category, date_of_fabrication) values (6, 59.79, 'pepperoni pizza', 'pasta', '2024-01-02');
+insert into products (id, price, name, category, date_of_fabrication) values (7, 13.48, 'bbq chicken pizza', 'breakfast', '2023-06-27');
+insert into products (id, price, name, category, date_of_fabrication) values (8, 34.51, 'margherita pizza', 'drinks', '2023-08-28');
+insert into products (id, price, name, category, date_of_fabrication) values (9, 4.11, 'apple pie', 'soups', '2023-04-24');
+insert into products (id, price, name, category, date_of_fabrication) values (10, 10.7, 'cheeseburger', 'grilled', '2023-06-09');
+insert into products (id, price, name, category, date_of_fabrication) values (11, 50.43, 'bbq chicken pizza', 'seafood', '2023-08-20');
+insert into products (id, price, name, category, date_of_fabrication) values (12, 52.33, 'caprese salad', 'appetizers', '2023-05-05');
+insert into products (id, price, name, category, date_of_fabrication) values (13, 13.36, 'veggie burger', 'appetizers', '2023-12-28');
+insert into products (id, price, name, category, date_of_fabrication) values (14, 57.06, 'cheeseburger', 'snacks', '2023-05-28');
+insert into products (id, price, name, category, date_of_fabrication) values (15, 47.99, 'veggie burger', 'vegetarian', '2023-09-24');
